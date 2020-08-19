@@ -1,0 +1,75 @@
+/******************************************************/
+/************** CSS FOR TAKE-ACTION.HTML **************/
+/******************************************************/
+
+/*background gradient*/
+html, body {
+  background-image: linear-gradient(#7ad6e6, #236b32);
+  
+  
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  padding-top: 20px;
+  font-size: 60px;
+}
+
+
+h2 {
+  text-align: left;
+  padding-left: 2em;
+  font-size: 40px;
+}
+
+
+.animal-container {
+ 
+}
+
+
+.habitat-container {
+padding-bottom: 1.5em;
+}
+
+.habitat-header {
+  padding-top: 1.5em;
+}
+
+
+
+}
+
+ul {
+  padding-left: 5em;
+  padding-top: 2.5em;
+}
+
+
+
+.links {
+  color: white;
+  font-size: 25px;
+}
+
+
+a:link {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #facd46;
+  background-color: transparent;
+}
+
+a:active {
+  text-decoration: underline;
+}

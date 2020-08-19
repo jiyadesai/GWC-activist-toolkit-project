@@ -1,0 +1,316 @@
+/* 
+
+This CSS file is contains the CSS rule sets for 
+    - index.html
+    - any universal elements that all pages use
+
+The CSS for the take-action.html is in take-action.css
+
+*/
+
+/************************************************/
+/************* UNIVERSAL ELEMENTS ***************/
+/************************************************/
+
+/* TODO: Customize your font properties and background color for all elements inside the <body> and <html> tags */
+body,
+html {
+  height: 100%;
+  font-size: 20px; /* Change the font size*/
+  font-family: 'Baloo Da 2', cursive; /* Change the font */
+  line-height: 1.5em; /* Change the line height size*/
+  margin: 0em;
+  color: white; /* Change the font color*/
+  background-color: #009933; /* Change the background color */
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: 10px;
+  font-size: 30px;
+  /*TODO: Change the font-family property to your linked font*/
+  font-family: 'Baloo Da 2', cursive;
+  color: white;
+  text-align: center;
+}
+
+/*TODO: Change the font-family property to your linked font*/
+h2 {
+  letter-spacing: 3px;
+  font-size: 35px;
+  font-family: 'Baloo Da 2', cursive;
+  color: white;
+  text-align: center;
+  line-height: 1em;
+}
+
+/*TODO: Change the color of a link when a person hovers over it*/
+p a {
+  color: #f0bb41;
+    /*43d6b9ff*/
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/
+
+/* All of these TODOs are optional. You should change the styling based on your mockup */
+
+/* TODO (optional): Change the background color and/or border style */
+
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #08a045;
+  /*#00b33c*/
+  border-bottom: 2.5px solid white;
+  /*  border-style: solid;
+  border-color: white;
+  border-width: 0.1em;  */
+}
+
+/* TODO (optional): Change the font size*/
+
+li.nav {
+  /* Styling for the <li class="nav"> element */
+  float: right;
+  font-size: 20px;
+}
+
+/* TODO (optional): Change the font color, decoration, and/or case */
+
+li.nav a {
+  /* Styling for the <a> elements in <li class="nav"> */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* TODO (optional): Change the background color and/or font color when the mouse hovers over an item */
+
+li.nav a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: white;
+  color: #00b33c;
+}
+
+/************************************************/
+/*********** CSS FOR FLEXBOX HEADING ************/
+/************************************************/
+
+/* TODO: Review the CSS properties to the flexbox container for title and intro text */
+.flex-container {
+   /* Set the flexbox display */
+  flex-direction: row; /* Configure the flex items to row */
+  flex-wrap: nowrap; /* Don’t wrap the flex items */
+  justify-content: center; /* Justify the flex items to the center */
+  align-items: center; /* Align the flex items to the center */
+
+  /* Design properties */
+ 
+  background-color: rgba(100, 100, 100, 0.6); */
+  /*background-color: #00b33c; */
+  padding: 5px;
+
+  /* Positioning properties */
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 22%; /* Change this value to move the box up or down */
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/*left box*/
+.heading-home {
+  padding: 1.5%;
+  color: white;
+  font-size: 70px;
+  letter-spacing: 10px;
+  line-height: 80px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  border: 3px solid white;
+  
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/* right box */
+.intro-text {
+  background-color: #00b33c; /* Add your own background color */
+  padding: 4%;
+  margin: 2%;
+  color: white; /* Add the color of your font */
+  font-size: 20px; /* Add your font size*/
+  letter-spacing: 2px; /* Adds space between letters */
+  line-height: 1.4em; /* Adds space between lines */
+  text-align: center; 
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/************************************************/
+/*************** PARALLAX SCROLL ****************/
+/************************************************/
+
+/*-----------TEXT SECTIONS-----------*/
+
+/* TODO (optional): Change the background color and/or text alignment */
+
+.text-section {
+  font-family: 'Roboto Condensed', sans-serif;
+  
+  /*background-color: #08a045;  in order to try out gradient background   */
+  /*  #00b33c  */
+  padding: 20px 45px;
+  margin: 0px;
+  text-align: center;
+  font-size: 22px;
+  
+}
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+
+/* TODO: Add the CSS selector for each image to the collective image rule set */
+
+.main-message,
+.image-one,
+.image-two,
+.image-three,
+.image-four,
+.image-five,
+.image-six { 
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #43d6b9ff;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+
+  /* TODO: Add the property to create the parallax scrolling effect here */
+  background-attachment: fixed;
+}
+
+/* TODO: Replace the current image URL with your own. This is the top image on your homepage. */
+.main-message {
+  background-image: url("https://cdn.glitch.com/2f72eee3-4843-41be-a5fb-1f527bb23675%2FIMG-0175.JPG?v=1594907137491");
+}
+
+/* TODO: Replace the current image URL with your own */
+.image-one {
+  background-image: url("https://cdn.glitch.com/2f72eee3-4843-41be-a5fb-1f527bb23675%2Fhabitat-loss.jpg?v=1594939986913");
+}
+
+/* TODO: Add a second background image. Make sure you add this class selector to the collective image rule set above */
+.image-two {
+  background-image: url("https://cdn.glitch.com/2f72eee3-4843-41be-a5fb-1f527bb23675%2Fpolar-bears-min.jpg?v=1594743809449");
+}
+
+/* TODO: Add more background images by repeating the process above */
+.image-three {
+  background-image: url("https://cdn.glitch.com/2f72eee3-4843-41be-a5fb-1f527bb23675%2Fturtle2.jpg?v=1594940947663");
+}
+
+.image-four {
+  background-image: url("https://cdn.glitch.com/2f72eee3-4843-41be-a5fb-1f527bb23675%2Fgiraffes.jpg?v=1594943594885");
+}
+
+.image-five {
+  background-image: url("https://cdn.glitch.com/2f72eee3-4843-41be-a5fb-1f527bb23675%2Frhino.jpg?v=1594943516167");
+}
+
+.image-six {
+  background-image: url("https://cdn.glitch.com/2f72eee3-4843-41be-a5fb-1f527bb23675%2Felephants-min.jpg?v=1594743805605");
+}
+
+
+
+
+/*-----------IMAGE ATTRIBUTIONS (if required)-----------*/
+.attributions {
+  font-size: 17px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/******************************************************/
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+/******************************************************/
+
+/* TODO: Add a breakpoint if the screen is 700px or less */
+@media screen and (max-width: 700px) {
+/* CSS rule sets */
+  .flex-container {
+    flex-wrap: wrap;
+    top: 20%;
+  }
+
+}
+
+/* TODO: Add additional breakpoints based on your website's design */
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: #00b33c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*  changes color of TAKE ACTION when you hover on it  */
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: #00b33c;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+
+/* hover on TAKE ACTION and SIGN PETITIONS will change color*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #facd46;
+  width: 148px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #facd46;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: red;
+  color: red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #facd46;
+  
+}
+
+
+
+
